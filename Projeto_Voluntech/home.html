@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style-fonts.css">
+</head>
+
+<body>
+    <img class="img-home" src="img/layout-de-fundo-azul-forma-ondulada_1017-14473.png">
+    <div class="home-conteudo">
+        <div class="imagem">
+            <img src="img/image.png" alt="" width="600px">
+        </div>
+        <div class="txt">
+            <h2>
+                Nosso objetivo é beneficiar pessoas promovendo atividades que visam cumprir os objetivos do <br> milênio
+                através do trabalho voluntário
+            </h2>
+        </div>
+        <div class="txt2">
+            <h2>
+                com a atual falta de oportunidades de trabalho que o brasil enfrente hoje vimos a oportunidade de <br>
+                unificarmos as empresas e os trabalhores por meio de trabalho voluntario remunerado
+            </h2>
+        </div>
+        <div class="buttons">
+            <a href="TelaDeLoginEmpresa.html" class="btn btnE animacao-hover">entrar como empresa</a>
+                <a href="TelaDeLoginUsuario.html" class="btn btnI animacao-hover">entrar como individuo</a>
+           
+        </div>
+        <div class="registro">
+            <div class="registro-texto animacao-hover" onclick="abrirPopupRegistro()">não tem uma conta? registre-se aqui </div>
+        </div>
+    
+        <div class="registro-popup animacao-hover" id="registro-popup">
+            <div class="popup-close animacao-hover" id="popupClose" onclick="fecharPopupRegistro()">
+                X
+            </div>
+            <div class="popup-titulo">
+                Selecione  o tipo de registro:
+            </div>
+            <div class="popup-conteudo">
+                <div class="popup-botoes">
+                    <div class="popup-botao">
+                        <a class="animacao-hover" href="cadastroE2.html">
+                            Registrar-se como Empresa
+                        </a>
+                    </div>
+                    <div class="popup-botao">
+                        <a class="animacao-hover" href="cadastroU.html">
+                            Registrar-se como Indivíduo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+<script src="js/script-popup.js"></script>
+</html>

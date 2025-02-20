@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Home </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/info-voluntario.css">
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/style-fonts.css">
+        
+        <style>
+            .menu-usuario-img {
+                background: url('../img/mcdonalds-logo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .menu-lateral-img {
+                background: url('../img/mcdonalds-logo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 70px auto 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+   
+        <nav class="menu-topo">
+            <div class="menu-conteudo">
+                <a href="../home-empresa.html">
+                    <div class="menu-logo">
+                        Voluntec
+                    </div>
+                </a>
+                <div class="menu-usuario">
+                    <div class="menu-usuario-nome">
+                        Empresa
+                    </div>
+                    <div class="menu-usuario-img animacao-hover"  id="menu-usuario-img" onclick="abrirMenuLateral()"></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="menu-lateral-usuario animacao-hover" id="menu-lateral-usuario">
+            <div class="menu-lateral-close animacao-hover" id="menu-lateral-close" onclick="fecharMenuLateral()"><div>x</div></div>
+
+            <div class="menu-lateral-conteudo">
+                <div class="menu-lateral-img animacao-hover"></div>
+                <div class="menu-lateral-nome">
+                    Empresa
+                </div>
+
+                <nav class="menu-links">
+                    <ul>
+                        <a href="../home-empresa.html"><li class="animacao-hover">  Página Inicial </li></a>
+                        <a href="../home.html"><li class="animacao-hover">  Sair </li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <section class="informacoes">
+            <div class="informacoes-conteudo">
+                <div class="informacoes-titulo">
+                    Informações do voluntário
+                </div>
+
+                <div class="ficha-informacoes">
+                    <div class="ficha-img">
+                        <img src="../img/perfilGenerico.png">
+                    </div>
+                    <div class="ficha-dados">
+                        <div class="ficha-item">
+                            Nome:
+                            <p> Emanuel Bochimpani Barher </p>
+                        </div>
+                        <div class="ficha-item">
+                            Email:
+                            <p> emanuel.barher@email.com.br </p>
+                        </div>
+                        <div class="ficha-item">
+                            Telefone:
+                            <p> (68) 98131-3623 </p>
+                        </div>
+                        <div class="ficha-item">
+                            CPF:
+                            <p> 28264688209 </p>
+                        </div>
+                        <div class="ficha-item">
+                            CEP:
+                            <p> 69901-192 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </body>
+</html>
+<script src="../js/script-menu.js"></script>

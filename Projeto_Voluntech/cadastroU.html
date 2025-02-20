@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" type="text/css" href="css/cadastroU.css">
+</head>
+<body>
+    <img class="img-home" src="img/layout-de-fundo-azul-forma-ondulada_1017-14473.png">
+    <div class="content">
+        <div id="Cadastro">
+            <form method="post" action="">
+                <h1>Cadastre-se</h1>
+                <p>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" required="required" type="text" placeholder="Nome"/>
+                </p>
+                <p>
+                    <label for="Email">Email</label>
+                    <input class="cadastroUsuario"  id="Email" name="Email" required="required" type="text" placeholder="Email"/> 
+                </p>
+                <p>
+                    <label for="Senha">Senha</label>
+                    <input id="Senha" name="Senha" required="required" type="password" placeholder="Senha"/>
+                </p>
+                <p>
+                    <label for="CEP">CEP</label>
+                    <input id="CEP" name="CEP" required="required" type="CEP" placeholder="CEP"/>
+                </p>
+                <p>
+                    <label for="Telefone">Telefone</label>
+                    <input id="Tel" name="Tel" required="required" type="text" placeholder="(41) 90000-0000"/>
+                </p>
+                <p>
+                    <label for="CPF">CPF</label>
+                    <input id="CPF" name="CPF" required="required" type="text" placeholder="CPF"/>
+                </p>
+                <p>
+                    <button onclick="verificarFormulario()" class="botão-confirmar2" type="submit">Confirmar</button>
+                </p>
+                <p class="link">
+                    ja tem uma conta?
+                    <a href="TelaDeLoginUsuario.html">ir para o login</a>
+                </p>
+            </form>
+    </div>
+    <script src="js/cadastroU.js">
+       
+    </script>
+</body>
+</html>

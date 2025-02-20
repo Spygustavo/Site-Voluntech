@@ -1,0 +1,149 @@
+body {
+    font-family: 'Madera';
+    margin: 0;
+    padding: 0;
+}
+
+
+.animacao-hover {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+}
+
+.conteudo {
+    width: 90%;
+    margin: 30px auto;
+    font-size: 18px
+}
+
+.conteudo p {
+    font-size: 20px;
+    font-weight: bold;
+    color: red
+}
+
+.ofertas {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.ofertas-conteudo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ofertas-titulo {
+    font-size: 20px
+}
+
+.ofertas-itens {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ofertas-item {
+    width: 31%;
+    box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    padding-bottom: 40px;
+    margin: 30px 0;
+}
+
+.ofertas-item-img {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.ofertas-item-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.ofertas-item-img:hover {
+    cursor: pointer;
+}
+
+.ofertas-item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    /*opacity: .7;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #121212;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.ofertas-item:hover .ofertas-item-hover , .ofertas-item-img:hover .ofertas-item-hover {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+}
+
+.ofertas-item-conteudo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ofertas-item-titulo {
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.ofertas-item-texto {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.ofertas-adicionar-item {
+    
+    background-color: rgba(65, 75, 178,1);
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 50px 0;
+    font-weight: bold;
+    box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+}
+
+.ofertas-adicionar-item a {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.ofertas-adicionar-item:hover {
+    background-color: #121212;
+    color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,131 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgba(249,249,249,1);
+}
+a{
+    text-decoration:none ;
+}
+a.links{
+    display: none;
+}
+
+.img-home {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content{
+    width: 500px;
+    margin: 15px auto;
+    position: relative;
+    z-index: 2;
+}
+h1{
+    font-size: 48px;
+    color: rgb(65, 75,178);
+    padding: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+}
+p{
+    margin-bottom: 15px;
+}
+p :first-child{
+    margin: 0px;
+}
+label{
+    position: relative;
+}
+::-webkit-input-placeholder  {
+    color: #bebcbc; 
+    font-style: italic;
+  }
+  input:-moz-placeholder,
+  textarea:-moz-placeholder{
+    color: #bebcbc;
+    font-style: italic;
+  } 
+  input{
+    outline: none;
+    border-radius: 25px;
+  }
+
+input:not([type="checkbox"]){
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px;  
+  border: 1px solid #b2b2b2;
+}
+.botão-confirmar{
+    width: 100%!important;
+    cursor: pointer;  
+    background: rgb(65, 75,178);
+    padding: 8px 5px;
+    font-size: 20px;  
+    border: 1px solid #fff; 
+    margin-bottom: 10px;  
+    text-shadow: 0 1px 1px #333;
+    color: #fff;
+    border-radius: 25px;
+}  
+.botão-confirmar:hover{
+    background: #4ab3c6;
+  }
+  .link{
+    position: absolute;
+    background:#e1eaeb;
+    color:rgb(65, 75,178);
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link a{
+    font-weight: bold;
+  background: #f7f8f1;
+  padding: 6px;
+  color: rgb(29, 162, 193);
+  margin-left: 10px;
+  border: 1px solid;
+  }
+  .link a:hover {
+    color: #39bfd7;
+    background: #f7f7f7;
+    border: 1px solid #4ab3c6
+  }
+  .botão-confirmar{
+    background-color: rgba(65, 75, 178,1);
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 50px 0;
+    font-weight: bold;
+  }

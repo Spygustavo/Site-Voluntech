@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Home </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/home-empresa.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/style-fonts.css">
+
+        <style>
+            .menu-usuario-img {
+                background: url('img/mcdonalds-logo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .menu-lateral-img {
+                background: url('img/mcdonalds-logo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 70px auto 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="menu-topo">
+            <div class="menu-conteudo">
+                <a href="home-empresa.html">
+                    <div class="menu-logo">
+                        Voluntec
+                    </div>
+                </a>
+                <div class="menu-usuario">
+                    <div class="menu-usuario-nome">
+                        Empresa
+                    </div>
+                    <div class="menu-usuario-img animacao-hover"  id="menu-usuario-img" onclick="abrirMenuLateral()"></div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="menu-lateral-usuario animacao-hover" id="menu-lateral-usuario">
+            <div class="menu-lateral-close animacao-hover" id="menu-lateral-close" onclick="fecharMenuLateral()"><div>x</div></div>
+
+            <div class="menu-lateral-conteudo">
+                <div class="menu-lateral-img animacao-hover"></div>
+                <div class="menu-lateral-nome">
+                    Empresa
+                </div>
+
+                <nav class="menu-links">
+                    <ul>
+                        <a href="home-empresa.html"><li class="animacao-hover">  Página Inicial </li></a>
+                        <a href="home.html"><li class="animacao-hover">  Sair </li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="explicacao">
+            <div class="conteudo">
+                <p> Seja bem vindo! </p> Aqui nesta página você poderá visualizar suas ofertas criadas para os usuários e criar ofertas de voluntariado através do botão abaixo
+            </div>
+        </section>
+        
+        <section class="ofertas">
+            <div class="ofertas-conteudo">
+
+                <div class="ofertas-titulo">
+                    Suas ofertas de trabalho:
+                </div>
+
+                <div class="ofertas-itens">
+                    <div class="ofertas-item">
+                        <a href="detalhes-trabalho-empresa.html">
+                            <div class="ofertas-item-img"> 
+                                <img src="img/mc1.png">
+                                
+                                <div class="ofertas-item-hover animacao-hover">
+                                    VER DETAHES
+                                </div>
+                            </div>
+                        </a>
+                      
+                        <div class="ofertas-item-conteudo">
+                            <div class="ofertas-item-titulo">
+                                DESCRIÇÃO
+                            </div>
+                            <div class="ofertas-item-texto">
+                            Estamos realizando um recrutamento para participar de um evento de limpeza voluntária próximo ao nosso estabelecimento, no dia 20/11/2023 às...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ofertas-item">
+                        <a href="detalhes-trabalho-empresa.html">
+                            <div class="ofertas-item-img"> 
+                                <img src="img/mc2.png">
+                                
+                                <div class="ofertas-item-hover animacao-hover">
+                                    VER DETAHES
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ofertas-item-conteudo">
+                            <div class="ofertas-item-titulo">
+                                DESCRIÇÃO
+                            </div>
+                            <div class="ofertas-item-texto">
+                                Procuramos voluntários que possam auxiliar na distribuição de alimentos próximos da data de vencimento para a população local. A data será no dia...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ofertas-item">
+                        <a href="detalhes-trabalho-empresa.html">
+                            <div class="ofertas-item-img"> 
+                                <img src="img/mc3.png">
+                                
+                                <div class="ofertas-item-hover animacao-hover">
+                                    VER DETAHES
+                                </div>
+                            </div>
+                        </a>
+                        <div class="ofertas-item-conteudo">
+                            <div class="ofertas-item-titulo">
+                                DESCRIÇÃO
+                            </div>
+                            <div class="ofertas-item-texto">
+                               Atualmente estamos ouvindo reclamações à respeito do terreno baldio próximo ao nosso estabelecimento, por este motivo estamos chamando voluntários para...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                    <div class="ofertas-adicionar-item animacao-hover">
+                        <a href="adicionar-trabalho-empresa.html">
+                            Adicionar uma nova oferta
+                        </a>
+                    </div>
+            
+               
+            </div>
+        </section>
+    
+    </body>
+</html>
+<script src="js/script-menu.js"></script>

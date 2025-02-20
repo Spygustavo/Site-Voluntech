@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Madera';
+}
+
+.Perfil-Usuario{
+    margin-top: 60px;
+    margin-left: 50px;
+
+}
+
+.Perfil-Nome{
+    margin-bottom: 50px;
+}
+
+.Perfil-Foto{
+    margin-bottom: 50px
+
+}
+.Perfil-Foto-Adicionar{
+
+}
+.Perfil-Foto-Adicionar label{
+    color: black;
+    background-color: rgba(65, 75, 178,1);
+    width: 180px;
+    padding: 20px;
+    cursor: pointer;
+    display: block; 
+    text-transform: uppercase;
+    transition: 1s;
+    border: 2px solid rgba(65, 75, 178,1);
+}
+label:hover{
+    color: rgba(65, 75, 178,1);
+    background-color: white;
+}
+.botãoTrocarImagem{
+    display: none;
+}
+
+.Perfil-Email{
+    margin-bottom: 50px;
+}
+
+.Perfil-CEP{
+    margin-bottom: 50px;
+}
+
+.Perfil-Telefone{
+    margin-bottom: 50px;
+}
+
+.Perfil-CPF{
+    
+}
+
+.Perfil-Desconectar{
+    width: 200px;
+    background-color:  rgba(65, 75, 178,1);
+    font-size: 30px;
+    transition: 1s;
+    padding: 10px;
+    color: #fff;
+}
+.Perfil-Desconectar a{  
+    color: white;
+}
+.Perfil-Desconectar:hover{
+    background-color: red;    
+
+}

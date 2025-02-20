@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Usuário</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style-fonts.css">
+    <link rel="stylesheet" href="css/perfilIndividuo.css">
+</head>
+<body>
+    <nav class="menu-topo">
+        <div class="menu-conteudo">
+            <a href="/home-Individuo.html">
+                <div class="menu-logo">
+                    Voluntec
+                </div>
+            </a>
+            <div class="menu-usuario">
+                <div class="menu-usuario-nome">
+                    Usuário
+                </div>
+                <div class="menu-usuario-img animacao-hover"  id="menu-usuario-img" onclick="abrirMenuLateral()"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="menu-lateral-usuario animacao-hover" id="menu-lateral-usuario">
+        <div class="menu-lateral-close animacao-hover" id="menu-lateral-close" onclick="fecharMenuLateral()"><div>x</div></div>
+
+        <div class="menu-lateral-conteudo">
+            <div class="menu-lateral-img animacao-hover"></div>
+            <div class="menu-lateral-nome">
+                Usuário
+            </div>
+
+            <nav class="menu-links">
+                <ul>
+                    <a href="home-individuo.html"><li class="animacao-hover">  Página Inicial </li></a>
+                    <a href="home.html"><li class="animacao-hover">  Sair </li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="Perfil-Usuario">
+        <div class="Perfil-Nome">
+            <h2>Nome do Usuário: Usuário </h2>
+            <hr>
+        </div>
+        <div class="Perfil-Foto">
+            <h2>Foto de perfil</h2>
+            <div class="Perfil-Foto-Adicionar">
+                <img src="img/perfilGenerico.png" alt="">
+                <label for="arquivo">Enviar uma foto</label>
+                <input type="file" class="botãoTrocarImagem" id="arquivo"> 
+                <hr>
+            </div>
+        </div>
+        <div class="Perfil-Email">
+            <h2>Email: Email@gmail.com</h2>
+            <hr>
+        </div>
+        <div class="Perfil-CEP">
+            <h2>CEP: 83821724</h2>
+            <hr>
+        </div>
+        <div class="Perfil-Telefone">
+            <h2>Telefone: (41) 983619625</h2>
+            <hr>
+        </div>
+        <div class="Perfil-CPF">
+            <h2>CPF: 27492179378</h2>
+            <hr>
+        </div>
+        <a href="home.html">
+        <div class="Perfil-Desconectar">
+            Desconectar
+        </div>
+        </a>
+    </div>
+    
+</body>
+<script src="js/script-menu.js"></script>
+</html>

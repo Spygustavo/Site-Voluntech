@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding:  0;
+    font-family: 'Madera';
+}
+
+.animacao-hover {
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+}
+
+.home-conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+.img-home {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.imagem {
+    text-align: center;
+    margin-top: -80px;
+}
+.txt {
+    text-align: center;
+}
+.txt2 {
+    text-align: center;
+   
+}
+.registro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.registro-texto {
+    font-size: 16px;
+    font-weight: bold;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.registro-texto:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.btn {
+    border: none;
+    padding: 15px 50px 20px 50px;
+    text-decoration: none;
+    background-color: rgb(65, 75, 178);
+    color: white;  
+    font-size: 20px;
+}
+.btnI {
+    margin-left: 200px;
+}
+
+.btn:hover {
+    background-color: #121212;
+    cursor: pointer;
+}
+
+.registro-popup {
+    position: fixed;
+    width: 50%;
+    padding-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup-ativo {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.popup-titulo {
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.popup-close:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.popup-conteudo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.popup-botoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-botao {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.popup-botao a {
+    padding: 20px;
+    background-color: rgb(65, 75, 178);
+    font-size: 1vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+.popup-botao a:hover {
+    background-color: #121212;
+}

@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Madera';
+}
+.container{
+
+}
+.imagem{
+    display: flex;
+}
+.imagem img{
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 30px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.conteudo{
+    margin-top: 40px;
+    font-size: 25px;
+    margin-left: 30px;
+    width: 40%;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.contatoCampos{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.contatos{
+    font-size: large;
+}
+
+.botoes{
+    margin-top: 100px;
+    margin-left: 500px;
+    display: flex;
+    align-items: start;
+}
+.botoes-voltar{
+    background-color: rgba(65, 75, 178,1);
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: bold;
+    box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    
+}
+
+.botoes-voluntariar-se{
+    margin-left: 50px;
+    background-color: rgba(65, 75, 178,1);
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: bold;
+    box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(43,43,43,0.75);
+    
+}
+
+.botoes-voltar a {
+    padding: 15px 20px 20px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.botoes-voluntariar-se a {
+    padding: 15px 20px 20px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.botoes-voltar:hover {
+    background-color: #121212;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botoes-voluntariar-se:hover{
+    background-color: #121212;
+    color: #fff;
+    cursor: pointer;
+}
+
+.PopUp-container{
+    width: 600px;
+    position: absolute;
+    top: 30px;
+    display: none;
+    justify-content: center;
+    margin-left: 600px;
+}
+
+.PopUp {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    border: solid 3px black;
+}
+
+.active {
+    display: flex;
+}
+
+.active .PopUp {
+    animation: PopUp .4s;
+}
+
+@keyframes PopUp{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+span {
+    margin: 10px auto;
+    font-size: 20px;
+}
+
+.botoesPopUp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.botoesPopUp button, a {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.botaoAceitar{
+    background-color: rgba(65, 75, 178,1);
+}
+
+.botaoNegar{
+    background-color: rgba(65, 75, 178,1)   ;
+}
+
+.botaoAceitar:hover {
+    background-color: #2f8024;
+    color: #fff;
+    cursor: pointer;
+}
+
+.botaoNegar:hover {
+    background-color: #a71111;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .PopUp {
+        padding: 10px;
+        width: 80%;
+    }
+
+    span, .botoesPopUp button {
+        font-size: smaller;
+    }
+}

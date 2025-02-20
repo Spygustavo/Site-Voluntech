@@ -1,0 +1,14 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Madera';
+    src: url('../fonts/madera/Madera-Regular.eot');
+    src: url('../fonts/madera/Madera-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/madera/Madera-Regular.woff2') format('woff2'),
+        url('../fonts/madera/Madera-Regular.woff') format('woff'),
+        url('../fonts/madera/Madera-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

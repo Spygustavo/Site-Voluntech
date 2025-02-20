@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Home </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/adicionar-trabalho-empresa.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/style-fonts.css">
+
+        <style>
+            .menu-usuario-img {
+                background: url('img/mcdonalds-logo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .menu-lateral-img {
+                background: url('img/mcdonalds-logo.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 70px auto 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+
+        <nav class="menu-topo">
+            <div class="menu-conteudo">
+                <a href="home-empresa.html">
+                    <div class="menu-logo">
+                        Voluntec
+                    </div>
+                </a>
+                <div class="menu-usuario">
+                    <div class="menu-usuario-nome">
+                        Empresa
+                    </div>
+                    <div class="menu-usuario-img animacao-hover"  id="menu-usuario-img" onclick="abrirMenuLateral()"></div>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="menu-lateral-usuario animacao-hover" id="menu-lateral-usuario">
+            <div class="menu-lateral-close animacao-hover" id="menu-lateral-close" onclick="fecharMenuLateral()"><div>x</div></div>
+
+            <div class="menu-lateral-conteudo">
+                <div class="menu-lateral-img animacao-hover"></div>
+                <div class="menu-lateral-nome">
+                    Empresa
+                </div>
+
+                <nav class="menu-links">
+                    <ul>
+                        <a href="home-empresa.html"><li class="animacao-hover">  Página Inicial </li></a>
+                        <a href="home.html"><li class="animacao-hover">  Sair </li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <section class="form">
+            <div class="form-conteudo">
+                <div class="form-titulo">
+                    Adicionar uma oferta de trabalho
+                </div>
+                <div class="form-subtitulo">
+                    Por favor, preencha as informações abaixo:
+                </div>
+
+                <form class="formulario">
+                    <div class="formulario-campo">
+                        <input class="animacao-hover campo" type="text" name="nome-empresa" id="Nome" placeholder="Nome" required>
+                        <label class="animacao-hover" for="nome-empresa"> Nome da empresa: </label>
+                    </div>
+
+                    <div class="formulario-adicionar-arquivo">
+                        <label class="arquivo-label" for="arquivo"> Imagem da empresa para visualização:</label>
+                        <input type="file" id="arquivo" class="arquivo-input" onchange='adicionarArquivo(this)'>
+                        <label for="arquivo">
+                          <span class="arquivo-botao animacao-hover">
+                            Adicionar arquivo
+                          </span>
+                        </label>
+                        <span id="nome-arquivo"></span>
+                      </div>
+
+                    <div class="formulario-campo">
+                        <textarea class="animacao-hover campo" type="text" name="nome-empresa" id="Detalhes" placeholder="Escreva aqui" required></textarea>
+                        <label class="animacao-hover" for="nome-empresa"> Detalhes do trabalho: </label>
+                    </div>
+                    
+                    <div class="form-cadastrar animacao-hover" onclick="abrirPopupRegistro()">
+                            cadastrar
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="registro-popup animacao-hover" id="registro-popup">
+            <div class="popup-close animacao-hover" id="popupClose" onclick="fecharPopupRegistro()">
+                X
+            </div>
+            <div class="popup-titulo">
+                Deseja confirmar o cadastro?
+            </div>
+            <div class="popup-conteudo">
+                <div class="popup-botoes">
+                    <div class="popup-botao">
+                        <a class="animacao-hover" href="home-empresa.html">
+                            Sim
+                        </a>
+                    </div>
+                    <div class="popup-botao" onclick="fecharPopupRegistro()">
+                        <a class="animacao-hover">
+                            Não
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>
+<script src="js/script-menu.js"></script>
+<script src="js/script-formulario-validacao.js"></script>
+</script>
